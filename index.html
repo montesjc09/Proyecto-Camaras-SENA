@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureCam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="securecam.css">
+</head>
+<body>
+
+  <!-- ─── HEADER BAND ─── -->
+  <div class="header-band">S E C U R E C A M</div>
+
+  <!-- ─── NAV ─── -->
+  <nav>
+    <div class="nav-brand">
+      <span class="nav-logo-icon">📷</span>
+      <span>SecureCam</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li style="position:relative;">
+        <a href="#" class="btn-nav-login">Iniciar Sesión</a>
+        <div class="profile-menu" id="profileMenu" aria-hidden="true">
+          <div class="profile-head">
+            <div class="profile-name" id="profileName">Nombre Usuario</div>
+            <div class="profile-username" id="profileUsername">usuario@ejemplo</div>
+          </div>
+          <div class="profile-actions">
+            <button id="btn-logout" class="btn btn-secondary">
+              <span class="btn-icon">🚪</span>
+              <span class="btn-text">Cerrar sesión</span>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="inicio">
+    <div class="hero-content">
+      <h1>Protege tu hogar con<br>tecnología inteligente</h1>
+      <div class="hero-taglines">
+        <p>🔒 "¡Tu seguridad no puede esperar!"</p>
+        <p>📹 "Cámaras de seguridad con calidad profesional al mejor precio."</p>
+        <p>👁️ "Observa, Protege y Controla."</p>
+        <p>🌙 "Mantén tus espacios seguros día y noche."</p>
+        <p>🛡️ "La mejor vigilancia para proteger tu mundo."</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="#inicio"    class="btn btn-primary">Inicio</a>
+        <a href="#productos" class="btn btn-secondary">Productos</a>
+        <a href="#contacto"  class="btn btn-secondary">Contacto</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-image-placeholder">
+        <img src="assets/hero-illustration.png" alt="Ilustración SecureCam">
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRODUCTOS ─── -->
+  <section id="productos">
+    <h2 class="section-title">Nuestros Productos</h2>
+    <div class="section-divider"></div>
+
+    <div class="products-grid">
+
+      <!-- Eufy SoloCam S40 -->
+      <div class="product-card reveal">
+        <h3>Eufy SoloCam S40</h3>
+        <div class="product-img"><img src="assets/eufy-solocam-s40.png" alt="Eufy SoloCam S40"></div>
+        <div class="product-meta">
+          <span class="price">Precio: $744.000 COP</span>
+          Tipo: Exterior | Resolución: 2K QHD<br>
+          Almacenamiento: 8GB interno
+        </div>
+        <p class="feat-label">✨ Ventajas Únicas</p>
+        <ul class="features-list">
+          <li class="pro">IA local avanzada – Reconoce caras conocidas</li>
+          <li class="pro">Panel solar integrado – Sin cables</li>
+          <li class="pro">8GB de almacenamiento interno incluido</li>
+          <li class="pro">Sin suscripciones nunca</li>
+          <li class="pro">Sirena de 100dB integrada</li>
+        </ul>
+        <p class="feat-label">⚠️ Desventajas</p>
+        <ul class="features-list">
+          <li class="con">Solo 2K (no 4K)</li>
+          <li class="con">Precio premium</li>
+        </ul>
+      </div>
+
+      <!-- Xiaomi Mi Home Security Camera 2K Pro -->
+      <div class="product-card reveal">
+        <h3>Xiaomi Mi Home Security Camera 2K Pro</h3>
+        <div class="product-img"><img src="assets/xiaomi-mi-home-2k-pro.png" alt="Xiaomi Mi Home Security Camera 2K Pro"></div>
+        <div class="product-meta">
+          <span class="price">Precio: $380.000 COP</span>
+          Tipo: Interior | Resolución: 2K QHD<br>
+          Almacenamiento: MicroSD hasta 256GB
+        </div>
+        <p class="feat-label">✨ Características Premium</p>
+        <ul class="features-list">
+          <li class="pro">Seguimiento automático de movimiento 360°</li>
+          <li class="pro">2K nítido con zoom digital 8x</li>
+          <li class="pro">Detección llanto bebés y mascotas</li>
+          <li class="pro">Audio bidireccional HD</li>
+          <li class="pro">Almacenamiento gratuito en MicroSD</li>
+          <li class="pro">Mi Home app muy intuitiva</li>
+        </ul>
+        <p class="feat-label">⚠️ Limitaciones</p>
+        <ul class="features-list">
+          <li class="con">Solo para interior</li>
+          <li class="con">Sin compatibilidad HomeKit</li>
+        </ul>
+      </div>
+
+      <!-- Ring Stick Up Cam Battery -->
+      <div class="product-card reveal">
+        <h3>Ring Stick Up Cam Battery</h3>
+        <div class="product-img"><img src="assets/ring-stick-up-cam.png" alt="Ring Stick Up Cam Battery"></div>
+        <div class="product-meta">
+          <span class="price">Precio: $340.000 COP</span>
+          Tipo: Interior/Exterior | Resolución: 1080p Full HD<br>
+          Almacenamiento: Nube (30 días gratis) + Opcional Ring Protect
+        </div>
+        <p class="feat-label">✨ Ventajas de Simplicidad</p>
+        <ul class="features-list">
+          <li class="pro">Instalación 5 minutos sin herramientas</li>
+          <li class="pro">Batería 6-12 meses de autonomía</li>
+          <li class="pro">Detección movimiento muy precisa</li>
+          <li class="pro">Compatible con Alexa nativo</li>
+          <li class="pro">30 días nube gratis incluidos</li>
+          <li class="pro">Versatilidad interior/exterior</li>
+        </ul>
+        <p class="feat-label">⚠️ Consideraciones</p>
+        <ul class="features-list">
+          <li class="con">Solo 1080p (no 4K)</li>
+          <li class="con">Funciones avanzadas requieren Ring Protect (€3/mes)</li>
+          <li class="con">Sin almacenamiento local</li>
+        </ul>
+      </div>
+
+      <!-- TP-Link Tapo C320WS -->
+      <div class="product-card reveal">
+        <h3>TP-Link Tapo C320WS</h3>
+        <div class="product-img"><img src="assets/tp-link-tapo-c320ws.png" alt="TP-Link Tapo C320WS"></div>
+        <div class="product-meta">
+          <span class="price">Precio: $220.000 COP</span>
+          Tipo: Exterior | Resolución: 2K UHD<br>
+          Almacenamiento: MicroSD hasta 512GB
+        </div>
+        <p class="feat-label">✨ Características Destacadas</p>
+        <ul class="features-list">
+          <li class="pro">2K UHD con visión nocturna a color</li>
+          <li class="pro">Sin suscripción obligatoria – MicroSD incluida</li>
+          <li class="pro">Foco LED integrado para ahuyentar intrusos</li>
+          <li class="pro">Compatible Alexa/Google al 100%</li>
+          <li class="pro">Detección personas y vehículos gratis</li>
+          <li class="pro">IP66 – Resistente a lluvia extrema</li>
+        </ul>
+        <p class="feat-label">⚠️ Limitaciones</p>
+        <ul class="features-list">
+          <li class="con">Requiere cable de alimentación</li>
+        </ul>
+      </div>
+
+      <!-- Reolink Angus Pro -->
+      <div class="product-card reveal">
+        <h3>REOLINK ANGUS PRO</h3>
+        <div class="product-img"><img src="assets/reolink-angus-pro.png" alt="REOLINK ANGUS PRO"></div>
+        <div class="product-meta">
+          <span class="price">Precio: $740.000 COP</span>
+          Tipo: Exterior/Interior | Resolución: 2K UHD<br>
+          Almacenamiento: MicroSD hasta 128GB + NVR opcional
+        </div>
+        <p class="feat-label">✨ Características</p>
+        <ul class="features-list">
+          <li class="pro">2K real con excelente calidad nocturna</li>
+          <li class="pro">100% sin suscripciones – Todo local</li>
+          <li class="pro">Batería solar – Autonomía ilimitada</li>
+          <li class="pro">Detección IA precisa (personas, vehículos, mascotas)</li>
+          <li class="pro">Audio bidireccional cristalino</li>
+          <li class="pro">Resistencia IP65 para exterior</li>
+        </ul>
+        <p class="feat-label">⚠️ Puntos Débiles</p>
+        <ul class="features-list">
+          <li class="con">Precio inicial más alto</li>
+          <li class="con">Setup inicial algo técnico para principiantes</li>
+        </ul>
+      </div>
+
+      <!-- Ctronics 4G/3G LTE -->
+      <div class="product-card reveal">
+        <h3>Ctronics 4G/3G LTE</h3>
+        <div class="product-img"><img src="assets/ctronics-4g-lte.png" alt="Ctronics 4G/3G LTE"></div>
+        <div class="product-meta">
+          <span class="price">Precio: $350.000 COP</span>
+          Tipo: Exterior | Resolución: 2mp/1080p<br>
+          Almacenamiento: MicroSD hasta 256GB
+        </div>
+        <p class="feat-label">✨ Características</p>
+        <ul class="features-list">
+          <li class="pro">Funcionan en cualquier lugar con señal celular 3G/4G</li>
+          <li class="pro">Detección humana por IA (PIR dual) para reducir falsas alarmas</li>
+          <li class="pro">Seguimiento automático de movimiento</li>
+          <li class="pro">Incluyen micrófono y altavoz – app Cetronis Pro</li>
+        </ul>
+        <p class="feat-label">⚠️ Consideraciones</p>
+        <ul class="features-list">
+          <li class="con">Requieren tarjeta SIM con plan de datos activo</li>
+          <li class="con">Panel solar incluido pero ubicación importante para batería</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── SOBRE NOSOTROS / CONTACTO ─── -->
+  <section id="contacto">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <div class="section-divider"></div>
+
+    <div class="about-inner">
+
+      <!-- Preguntas frecuentes -->
+      <div class="reveal">
+        <p class="faq-intro">
+          Estas son algunas preguntas frecuentes de compradores:
+        </p>
+
+        <div class="faq-item">
+          <h4>¿Las cámaras funcionan sin internet?</h4>
+          <p>No, ya que todas tienen funciones que requieren conexión Wi-Fi, como la detección de rostros de IA.</p>
+        </div>
+
+        <div class="faq-item">
+          <h4>¿Las cámaras tienen garantía?</h4>
+          <p>Sí, cada cámara dependiendo su calidad traen de 12 a 8 meses de garantía, dependiendo del daño.</p>
+        </div>
+
+        <div class="faq-item">
+          <h4>¿Incluyen instalación?</h4>
+          <p>Sí, por la compra de cualquiera de nuestras cámaras que están en nuestro catálogo, su instalación es gratis.</p>
+        </div>
+
+        <div class="faq-item">
+          <h4>¿Cómo veo las cámaras desde el celular?</h4>
+          <p>Las puedes ver descargando la aplicación que traiga la cámara al comprarla, ya que en su caja está el respectivo QR para enlazarla.</p>
+        </div>
+      </div>
+
+      <!-- Imagen y contacto -->
+      <div class="reveal">
+        <div class="about-img">
+          <img
+            class="about-image"
+            src="assets/imagen1.png"
+            alt="Instalación de cámara de seguridad"
+          >
+        </div>
+
+        <div class="tagline-box">
+          "En SecureCam protegemos hogares y negocios con tecnología inteligente,
+          ofreciendo cámaras de alta calidad y soporte especializado."
+        </div>
+
+        <a href="https://wa.me/573115072267" class="whatsapp-btn" target="_blank">
+          <span class="wa-icon">💬</span>
+          WhatsApp: +57 311 507 2267 o +57 301 316 8754
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    © 2025 SecureCam — Protegemos lo que más importa 🔒
+  </footer>
+
+  <!-- ─── MODAL DE AUTENTICACIÓN ─── -->
+  <div class="auth-modal" id="authModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Autenticación SecureCam">
+    <div class="auth-shell">
+      <button type="button" class="modal-close" id="closeAuthBtn">‹</button>
+
+      <div class="auth-window">
+        <input type="radio" id="tab-login" name="auth-tab-group" checked>
+        <input type="radio" id="tab-register" name="auth-tab-group">
+
+        <div class="auth-tabs-nav">
+          <label for="tab-login" class="tab-label-btn">Iniciar sesión</label>
+          <label for="tab-register" class="tab-label-btn">Registrarse</label>
+        </div>
+
+        <div class="auth-panel login-panel">
+          <div class="auth-header">
+            <h2>Inicio de sesión</h2>
+            <p>¿No tengo una cuenta? <a href="#" class="auth-link" id="goToRegister">Regístrate</a></p>
+          </div>
+
+          <form id="form-login">
+            <div class="form-group">
+              <span class="country-code">+57</span>
+              <input id="login-phone" type="tel" placeholder="Número de teléfono" required>
+            </div>
+
+            <div class="form-group">
+              <span class="input-icon">🔒</span>
+              <input id="login-password" type="password" placeholder="Contraseña" required>
+            </div>
+
+            <a href="#" class="forgot-password-link">Olvidé mi contraseña</a>
+            <button id="btn-login-submit" type="submit" class="auth-submit-btn">Inicio</button>
+          </form>
+
+          <div class="auth-social-footer">
+            <span class="social-icon">📸</span>
+            <span class="social-icon">🌐</span>
+            <span class="social-icon">📘</span>
+          </div>
+        </div>
+
+        <div class="auth-panel register-panel">
+          <div class="auth-header">
+            <h2>Crear cuenta</h2>
+            <p>¿Ya tengo una cuenta? <a href="#" class="auth-link" id="goToLogin">Iniciar sesión</a></p>
+          </div>
+
+          <form id="form-register">
+            <div class="form-group">
+              <input id="reg-name" type="text" placeholder="Nombre:" required>
+            </div>
+
+            <div class="form-group">
+              <input id="reg-username" type="text" placeholder="Correo o número:" required>
+            </div>
+
+            <div class="form-group">
+              <input id="reg-password" type="password" placeholder="Contraseña" required>
+            </div>
+
+            <button id="btn-register-submit" type="submit" class="auth-submit-btn">Registrarme</button>
+          </form>
+
+          <div class="auth-social-footer">
+            <span class="social-icon">📸</span>
+            <span class="social-icon">🌐</span>
+            <span class="social-icon">📘</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── JS: Scroll Reveal y Autenticación ─── -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const authModal = document.getElementById('authModal');
+      const closeAuthBtn = document.getElementById('closeAuthBtn');
+      const navLoginBtn = document.querySelector('.btn-nav-login');
+      const goToRegister = document.getElementById('goToRegister');
+      const goToLogin = document.getElementById('goToLogin');
+      const tabLogin = document.getElementById('tab-login');
+      const tabRegister = document.getElementById('tab-register');
+
+      const loginForm = document.getElementById('form-login');
+      const loginPhone = document.getElementById('login-phone');
+      const loginPassword = document.getElementById('login-password');
+      const registerForm = document.getElementById('form-register');
+      const regName = document.getElementById('reg-name');
+      const regUsername = document.getElementById('reg-username');
+      const regPassword = document.getElementById('reg-password');
+      const aboutImage = document.querySelector('.about-image');
+
+      const observe = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.reveal').forEach(el => observe.observe(el));
+
+      if (aboutImage) {
+        aboutImage.addEventListener('error', () => {
+          const aboutImageBox = aboutImage.parentElement;
+          if (aboutImageBox) {
+            aboutImageBox.textContent = '🔒';
+          }
+        }, { once: true });
+      }
+
+      function openModal() {
+        if (!authModal) return;
+        authModal.classList.add('open');
+        authModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('no-scroll');
+      }
+
+      function closeModal() {
+        if (!authModal) return;
+        authModal.classList.remove('open');
+        authModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('no-scroll');
+      }
+
+      const profileMenu = document.getElementById('profileMenu');
+      const profileNameEl = document.getElementById('profileName');
+      const profileUsernameEl = document.getElementById('profileUsername');
+      const btnLogout = document.getElementById('btn-logout');
+
+      function showProfileMenu() {
+        if (!profileMenu) return;
+        profileMenu.setAttribute('aria-hidden', 'false');
+      }
+
+      function hideProfileMenu() {
+        if (!profileMenu) return;
+        profileMenu.setAttribute('aria-hidden', 'true');
+      }
+
+      function toggleProfileMenu() {
+        if (!profileMenu) return;
+        const hidden = profileMenu.getAttribute('aria-hidden') === 'true';
+        profileMenu.setAttribute('aria-hidden', hidden ? 'false' : 'true');
+      }
+
+      if (navLoginBtn) {
+        navLoginBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          // If user already logged (nav shows Hola,), toggle profile menu
+          if (navLoginBtn.dataset && navLoginBtn.dataset.name) {
+            toggleProfileMenu();
+          } else {
+            openModal();
+          }
+        });
+      }
+
+      if (closeAuthBtn) {
+        closeAuthBtn.addEventListener('click', closeModal);
+      }
+
+      if (authModal) {
+        authModal.addEventListener('click', (e) => {
+          if (e.target === authModal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') closeModal();
+        });
+      }
+
+      // Logout action
+      if (btnLogout && navLoginBtn) {
+        btnLogout.addEventListener('click', (e) => {
+          e.preventDefault();
+          // Clear UI state
+          delete navLoginBtn.dataset.name;
+          delete navLoginBtn.dataset.username;
+          navLoginBtn.textContent = 'Iniciar Sesión';
+          hideProfileMenu();
+        });
+      }
+
+      // Close profile menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!profileMenu) return;
+        const isClickInside = e.target.closest && (e.target.closest('#profileMenu') || e.target.closest('.btn-nav-login'));
+        if (!isClickInside) {
+          hideProfileMenu();
+        }
+      });
+
+      if (goToRegister) {
+        goToRegister.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (tabRegister) tabRegister.checked = true;
+        });
+      }
+
+      if (goToLogin) {
+        goToLogin.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (tabLogin) tabLogin.checked = true;
+        });
+      }
+
+      if (loginForm) {
+        loginForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const phoneValue = loginPhone.value.trim();
+          const passwordValue = loginPassword.value;
+
+          if (!phoneValue || !passwordValue) {
+            alert('Por favor ingresa tu número y contraseña.');
+            return;
+          }
+
+          const users = getUsers();
+          const matchedUser = users.find(user =>
+            user.usuario.toLowerCase() === phoneValue.toLowerCase() &&
+            user.contrasena === passwordValue
+          );
+
+          if (!matchedUser) {
+            alert('Usuario o contraseña incorrectos. Verifica tus datos.');
+            return;
+          }
+
+          alert(`¡Bienvenido de nuevo, ${matchedUser.nombre}!`);
+
+          if (navLoginBtn) {
+            navLoginBtn.textContent = `Hola, ${matchedUser.nombre}`;
+            navLoginBtn.dataset.name = matchedUser.nombre;
+            navLoginBtn.dataset.username = matchedUser.usuario;
+            if (profileNameEl) profileNameEl.textContent = matchedUser.nombre;
+            if (profileUsernameEl) profileUsernameEl.textContent = matchedUser.usuario;
+          }
+
+          closeModal();
+        });
+      }
+
+      const STORAGE_KEY = 'securecam_users';
+
+      function getUsers() {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        return stored ? JSON.parse(stored) : [];
+      }
+
+      function saveUsers(users) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(users));
+      }
+
+      if (registerForm) {
+        registerForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const nameValue = regName.value.trim();
+          const usernameValue = regUsername.value.trim();
+          const passwordValue = regPassword.value;
+
+          if (!nameValue || !usernameValue || !passwordValue) {
+            alert('Por favor completa todos los campos para registrarte.');
+            return;
+          }
+
+          const users = getUsers();
+          const existing = users.find(user => user.usuario.toLowerCase() === usernameValue.toLowerCase());
+          if (existing) {
+            alert('Este correo o número ya está registrado. Intenta iniciar sesión.');
+            return;
+          }
+
+          users.push({
+            nombre: nameValue,
+            usuario: usernameValue,
+            contrasena: passwordValue
+          });
+
+          saveUsers(users);
+
+          alert(`¡Registro exitoso, ${nameValue}! Ahora puedes iniciar sesión.`);
+          regName.value = '';
+          regUsername.value = '';
+          regPassword.value = '';
+          if (tabLogin) tabLogin.checked = true;
+        });
+      }
+    });
+  </script>
+
+</body>
